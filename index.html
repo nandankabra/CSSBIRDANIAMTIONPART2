@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .boy{
+                width: 66px;
+                height: 110px;
+                position: relative;
+                animation-name: b2;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                
+
+            }
+            @keyframes b2 {
+                0%{
+                    left:0px;
+                }
+                100%{
+                    left:1000px;
+                }
+                
+            }
+            .boy1{
+                width: 74px;
+                height: 110px;
+                background-image: url("./img/CSS-Sprites.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                animation-name: b1;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                animation-timing-function: steps(5);
+                animation-play-state: running;    
+            }
+            @keyframes b1 {
+                0%{
+                    background-position: 0px 0px;
+                }
+                100%{
+                    background-position: -309px 0px;
+                }
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="boy">
+            <div class="boy1"></div>
+        </div>
+    </body>
+</html>
